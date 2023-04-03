@@ -276,7 +276,7 @@ public class LinkedUnorderedList<T> implements UnorderedListADT<T> {
                 throw new ConcurrentModificationException(LIST_MODIFIED);
             }
             if (!hasNext()) {
-                throw new NoSuchElementException("There are no more elementes");
+                throw new NoSuchElementException("There are no more elements");
             }
             this.okToRemove = true;
             this.current = this.current.getNext();

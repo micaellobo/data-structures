@@ -169,12 +169,12 @@ public abstract class AbstractArrayList<T> implements ListADT<T> {
 
         private final String LIST_MODIFIED = "The list was been modified, you can´t use this Iterator";
 
-        private int current;
+        private int currentIndex;
         private int expectedModCount;
         private boolean okToRemove;
 
         public BasicIterator() {
-            this.current = 0;
+            this.currentIndex = 0;
             this.expectedModCount = modCount;
             this.okToRemove = false;
         }
@@ -184,7 +184,7 @@ public abstract class AbstractArrayList<T> implements ListADT<T> {
             if (expectedModCount != modCount) {
                 throw new ConcurrentModificationException(LIST_MODIFIED);
             }
-            return this.current < list.length && list[this.current] != null;
+            return this.currentIndex < list.length && list[this.currentIndex] != null;
         }
 
         @Override
@@ -193,10 +193,10 @@ public abstract class AbstractArrayList<T> implements ListADT<T> {
                 throw new ConcurrentModificationException(LIST_MODIFIED);
             }
             if (!hasNext()) {
-                throw new NoSuchElementException("There are no more elementes");
+                throw new NoSuchElementException("There are no more elements");
             }
             this.okToRemove = true;
-            return list[this.current++];
+            return list[this.currentIndex++];
         }
 
         @Override
@@ -209,7 +209,7 @@ public abstract class AbstractArrayList<T> implements ListADT<T> {
             }
             this.okToRemove = false;
             this.expectedModCount++;
-            fastRemove(this.current++);
+            fastRemove(this.currentIndex++);
         }
     }
 
