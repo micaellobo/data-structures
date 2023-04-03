@@ -2,7 +2,7 @@
 
 This project contains a collection of data structures as well as sorting and searching algorithms implemented in `Java`.
 
-This was developed from scratch, without the use of any external libraries or packages. Only used the `Iterator` interface from the `java.util` package to implement ([see implementation](/src/main/java/com/example/arrayList/AbstractArrayList.java#L168-L214)) the iterator pattern, as it provides a standard way of iterating over collections. 
+This was developed from scratch, without the use of any external libraries or packages. Only used the `Iterator` interface from the `java.util` package to implement the iterator pattern, as it provides a standard way of iterating over collections. 
 
 ##### Minimalist Class Diagram
 
@@ -20,7 +20,7 @@ This was developed from scratch, without the use of any external libraries or pa
     - [Linked Min Heap](/src/main/java/com/example/binaryTree/LinkedHeapMin.java)
     - [Linked Max Heap](/src/main/java/com/example/binaryTree/LinkedHeapMax.java)
     - [Array Min Heap](/src/main/java/com/example/arrayBinaryTree/ArrayHeapMin.java)
-- List, with [Iterator](/src/main/java/com/example/list/LinkedUnorderedList.java#L250-L289) pattern implemented
+- List, with [Iterator](/src/main/java/com/example/list/LinkedUnorderedList.java#L250-L289) pattern implemented 
     - [Linked Ordered List](/src/main/java/com/example/list/LinkedOrderedList.java)
     - [Linked Unordered List](/src/main/java/com/example/list/LinkedUnorderedList.java)
     - [Double Linked Ordered List](/src/main/java/com/example/doubleLinkedList/DoubleLinkedOrderedList.java)
