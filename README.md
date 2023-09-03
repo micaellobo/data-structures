@@ -4,7 +4,7 @@ This project contains a collection of data structures as well as sorting and sea
 
 This was developed from scratch, without the use of any external libraries or packages. Only used the `Iterator` interface from the `java.util` package to implement the iterator pattern, as it provides a standard way of iterating over collections. 
 
-##### Minimalist Class Diagram
+### Minimalist Class Diagram
 
 ![Minimalist Class Diagram](class-diagram.png "Minimalist Class Diagram")
 
